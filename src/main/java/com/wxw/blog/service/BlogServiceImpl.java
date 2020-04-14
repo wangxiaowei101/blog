@@ -144,6 +144,12 @@ public class BlogServiceImpl implements BlogService {
         return blogRepository.save(b);
     }
 
+    @Override
+    public  List<Blog> getBlogType(Long id) {
+
+        return blogRepository.getTypeId(id);
+    }
+
     @Transactional
     @Override
     public void deleteBlog(Long id) {

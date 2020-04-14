@@ -66,7 +66,7 @@
         </div>
          /*/-->
         <div class="ui right aligned container">
-          <button type="button" class="ui button" onclick="window.history.go(-1)" >返回</button>
+          <button type="button" class="ui button"  id="fh" >返回</button>
           <button class="ui teal submit button">提交</button>
         </div>
 
@@ -151,6 +151,12 @@
                       .closest('.message')
                       .transition('fade');
             });
+
+    $("#fh").click(function () {
+      window.location.href="/admin/tags";
+
+    })
+
   </script>
 </body>
 </html>

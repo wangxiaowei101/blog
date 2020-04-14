@@ -35,5 +35,7 @@ public interface BlogService {
 
     Blog updateBlog(Long id, Blog blog);
 
+    List<Blog>  getBlogType(Long id);
+
     void deleteBlog(Long id);
 }

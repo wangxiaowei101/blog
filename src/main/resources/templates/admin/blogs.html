@@ -105,7 +105,7 @@
             <td th:text="${blog.updateTime}">2019-10-02 09:45</td>
             <td>
               <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
-              <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red basic button">删除</a>
+              <a href="#" onclick="return confirm('确定要删除吗?')" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red basic button">删除</a>
             </td>
           </tr>
           </tbody>

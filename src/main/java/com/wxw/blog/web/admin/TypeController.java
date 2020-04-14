@@ -1,7 +1,9 @@
 package com.wxw.blog.web.admin;
 
 
+import com.wxw.blog.po.Blog;
 import com.wxw.blog.po.Type;
+import com.wxw.blog.service.BlogService;
 import com.wxw.blog.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -26,6 +28,9 @@ public class TypeController {
 
     @Autowired
     private TypeService typeService;
+
+    @Autowired
+   private BlogService blogService;
 
     @GetMapping("/types")
     public String types(@PageableDefault(size = 3,sort = {"id"},direction = Sort.Direction.DESC)
@@ -87,8 +92,14 @@ public class TypeController {
 
     @GetMapping("/types/{id}/delete")
     public String delete(@PathVariable Long id,RedirectAttributes attributes) {
-        typeService.deleteType(id);
-        attributes.addFlashAttribute("message", "删除成功");
+         if (blogService.getBlogType(id).size()==0) {
+
+             typeService.deleteType(id);
+             attributes.addFlashAttribute("message", "删除成功");
+         }else{
+               System.out.println("1111111111111----------:"+blogService.getBlogType(id));
+             attributes.addFlashAttribute("message", "该分类以被使用不能被删除");
+         }
         return "redirect:/admin/types";
     }
 

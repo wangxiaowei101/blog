@@ -169,4 +169,16 @@ body {
     .m-mobile-wide {
         width: 100% !important;
     }
+
+}
+.img-box{
+    padding: 0px !important;
+    /*border: red solid 1px;*/
+    overflow: hidden;
+}
+.img-hover{
+    transition: all 0.6s;
+}
+.img-hover:hover{
+    transform: scale(1.5);
 }

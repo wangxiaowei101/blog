@@ -50,7 +50,7 @@
       <div class="ui attached segment m-padded-tb-large">
         <div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
           <a href="#"  th:href="@{/types/{id}(id=${type.id})}" class="ui basic  button" th:classappend="${type.id==activeTypeId} ? 'teal'" th:text="${type.name}">思考与感悟</a>
-          <div class="ui basic teal left pointing label" th:classappend="${type.id==activeTypeId} ? 'teal'" th:text="${#arrays.length(type.blogs)}">24</div>
+          <div class="ui basic  left pointing label" th:classappend="${type.id==activeTypeId} ? 'teal'" th:text="${#arrays.length(type.blogs)}">24</div>
         </div>
 
       </div>
@@ -82,9 +82,9 @@
               </div>
             </div>
 
-            <div class="five wide column">
+            <div class="five wide column img-box">
               <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
-                <img src="https://unsplash.it/800/450?image=1005" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
+                <img src="https://unsplash.it/800/450?image=1005" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image img-hover">
               </a>
             </div>
 

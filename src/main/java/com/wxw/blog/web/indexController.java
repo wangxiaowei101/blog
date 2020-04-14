@@ -1,11 +1,13 @@
 package com.wxw.blog.web;
 
 
+import com.wxw.blog.po.Blog;
 import com.wxw.blog.service.BlogService;
 import com.wxw.blog.service.TagService;
 import com.wxw.blog.service.TypeService;
 import com.wxw.blog.vo.BlogQuery;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -35,6 +37,8 @@ public class indexController {
     @GetMapping("/")
     public  String index(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable
     , Model model)  {
+
+
         model.addAttribute("page",blogService.listBlog(pageable));
         model.addAttribute("types", typeService.listTypeTop(6));
         model.addAttribute("tags", tagService.listTagTop(10));

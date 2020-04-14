@@ -431,7 +431,7 @@ h5,h6{font-size:1em;}
 
         <!--标签-->
         <div class="m-padded-lr-responsive" >
-          <div class="ui basic teal left pointing label" th:each="tag:${tags}" th:text="${tag.name}">方法论</div>
+          <div class="ui basic teal left pointing label" th:each="tag:${blog.tags}" th:text="${tag.name}">方法论</div>
         </div>
 
         <!--赞赏-->
@@ -583,7 +583,7 @@ h5,h6{font-size:1em;}
             </div>
           </div>
         </div>
-        <div id="comment-form" class="ui form">
+        <div id="comment-form" class="ui form me">
           <input type="hidden" name="blog.id" th:value="${blog.id}">
           <input type="hidden" name="parentComment.id" value="-1">
           <div class="field">
@@ -606,6 +606,7 @@ h5,h6{font-size:1em;}
               <button id="commentpost-btn" type="button" class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
             </div>
           </div>
+          <div class="ui error message"></div>
 
         </div>
       </div>
@@ -751,7 +752,7 @@ h5,h6{font-size:1em;}
     })
 
     //评论表单验证
-    $('.ui.form').form({
+    $('.ui.form.me').form({
       fields: {
         title: {
           identifier: 'content',
@@ -786,7 +787,7 @@ h5,h6{font-size:1em;}
 
 
     $('#commentpost-btn').click(function () {
-      var boo = $('.ui.form').form('validate form');
+      var boo = $('.ui.form.me').form('validate form');
       if (boo) {
         console.log('校验成功');
         postData();

@@ -10,12 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 
 @Controller
@@ -37,7 +35,11 @@ public class CommentController {
         if (user!=null) {
             model.addAttribute("user", user);
         }
+        List<Comment> comments = commentService.listCommentByBlogId(blogId);
+
         model.addAttribute("comments", commentService.listCommentByBlogId(blogId));
+
+
         return "blog :: commentList";
     }
 
@@ -59,12 +61,13 @@ public class CommentController {
 
 
     @RequestMapping("/comments/{id}/delete")
-    public String delcomments(@PathVariable Long id, Model model) {
+    public String delcomments(@PathVariable Long id,@RequestParam("blogId") Long blogId, Model model) {
 
 
         commentService.deleteComment(id);
+        System.out.println("----------------"+blogId);
 
-        return "redirect:/";
+        return "redirect:/blog/" + blogId;
     }
 
 

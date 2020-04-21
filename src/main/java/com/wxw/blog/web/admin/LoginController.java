@@ -3,6 +3,12 @@ package com.wxw.blog.web.admin;
 
 import com.wxw.blog.po.User;
 import com.wxw.blog.service.UserService;
+import com.wxw.blog.util.MD5Utils;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.session.Session;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -38,10 +44,6 @@ public class LoginController {
 
                 }
             }
-            
-
-        
-
 
         return "admin/login";
     }
@@ -54,17 +56,35 @@ public class LoginController {
                         RedirectAttributes attributes, HttpServletResponse response) {
 
         System.out.println("是否记住密码："+remember);
-       if(remember!=null){
-           Cookie cookie = new Cookie("ck",username+"-"+password);
-           cookie.setMaxAge(60*60*365);
-           response.addCookie(cookie);
-       }else {
-           Cookie cookie = new Cookie("ck","");
-           cookie.setMaxAge(0);
-           response.addCookie(cookie);
-       }
-        User user = userService.checkUser(username, password);
-        if (user != null) {
+
+        Subject subject = SecurityUtils.getSubject();
+        String md5paw = MD5Utils.md5Hash(password, username, 3);
+        UsernamePasswordToken token = new UsernamePasswordToken(username,md5paw);
+        try {
+            subject.login(token);
+            User user = userService.findUserByName(username);
+            session.setAttribute("user",user);
+
+            if(remember!=null){
+                Cookie cookie = new Cookie("ck",username+"-"+password);
+                cookie.setMaxAge(60*60*365);
+                response.addCookie(cookie);
+            }else {
+                Cookie cookie = new Cookie("ck","");
+                cookie.setMaxAge(0);
+                response.addCookie(cookie);
+            }
+
+            return "admin/index";
+        } catch (AuthenticationException e) {
+            e.printStackTrace();
+            attributes.addFlashAttribute("message", "用户名和密码错误");
+            return "redirect:/admin";
+        }
+
+        /*User user = userService.checkUser(username, password);*/
+
+     /*   if (user != null) {
             user.setPassword(null);
             session.setAttribute("user",user);
 
@@ -73,7 +93,7 @@ public class LoginController {
         } else {
             attributes.addFlashAttribute("message", "用户名和密码错误");
             return "redirect:/admin";
-        }
+        }*/
     }
 
     @GetMapping("/logout")

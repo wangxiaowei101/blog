@@ -33,13 +33,13 @@
   </nav>
 
   <!--中间内容-->
-  <div  class="m-container-small m-padded-tb-big">
-    <div class="ui container">
+  <div  class="m-container-small m-padded-tb-big animated bounceInDown ">
+    <div class="ui container ">
       <!--header-->
-      <div class="ui top attached segment">
+      <div class="ui top attached segment " >
         <div class="ui middle aligned two column grid">
           <div class="column">
-            <h3 class="ui teal header">分类</h3>
+            <h3 class="ui blue header">分类</h3>
           </div>
           <div class="right aligned column">
             共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${#arrays.length(types)}"> 14 </h2> 个
@@ -49,13 +49,14 @@
 
       <div class="ui attached segment m-padded-tb-large">
         <div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
+          <input type="hidden" th:value="${type.id}"/>
           <a href="#"  th:href="@{/types/{id}(id=${type.id})}" class="ui basic  button" th:classappend="${type.id==activeTypeId} ? 'teal'" th:text="${type.name}">思考与感悟</a>
           <div class="ui basic  left pointing label" th:classappend="${type.id==activeTypeId} ? 'teal'" th:text="${#arrays.length(type.blogs)}">24</div>
         </div>
 
       </div>
 
-      <div class="ui top attached teal segment">
+      <div class="ui top attached teal segment ">
         <div class="ui padded vertical segment m-padded-tb-large" th:each="blog:${page.content}">
           <div class="ui middle aligned mobile reversed stackable grid" >
             <div class="eleven wide column">
@@ -95,13 +96,16 @@
 
       <!--footer-->
       <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
-        <div class="ui middle aligned two column grid">
-          <div class="column">
-            <a href="#" th:href="@{/(page=${page.number}-1)}"  th:unless="${page.first}" class="ui mini teal basic button">上一页</a>
-          </div>
-          <div class="right aligned column">
-            <a href="#" th:href="@{/(page=${page.number}+1)}"  th:unless="${page.last}" class="ui mini teal basic button">下一页</a>
-          </div>
+        <div class="ui middle aligned two column grid"  th:each="type : ${types}">
+
+            <div class="column" th:if="${type.id==activeTypeId}">
+              <a href="#" th:href="@{/types/{id}((id=${type.id}),(page=${page.number}-1))}"  th:unless="${page.first}" class="ui mini teal basic button">上一页</a>
+            </div>
+            <div class="right aligned column" th:if="${type.id==activeTypeId}">
+              <a href="#" th:href="@{/types/{id}((id=${type.id}),(page=${page.number}+1))}"  th:unless="${page.last}" class="ui mini teal basic button">下一页</a>
+
+            </div>
+
         </div>
       </div>
 
@@ -154,6 +158,7 @@
     $('.menu.toggle').click(function () {
       $('.m-item').toggleClass('m-mobile-hide');
     });
+
 
   </script>
 </body>

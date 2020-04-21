@@ -1,21 +1,33 @@
 package com.wxw.blog;
 
 import com.wxw.blog.dao.BlogRepository;
+import com.wxw.blog.dao.CommentRepository;
+import com.wxw.blog.dao.TagRepository;
+import com.wxw.blog.dao.UserRepository;
+import com.wxw.blog.po.Comment;
+import com.wxw.blog.po.Tag;
+import com.wxw.blog.po.User;
 import com.wxw.blog.service.BlogService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Sort;
+
+import java.util.List;
 
 @SpringBootTest
 class BlogApplicationTests {
 
     @Autowired
-    private BlogService blogService;
+    private TagRepository userRepository;
     @Autowired
-    private BlogRepository blogRepository;
+    private CommentRepository commentRepository;
     @Test
     void contextLoads() {
-      System.out.println(blogRepository.getTypeId((long)3));
+
+        Tag wxw = userRepository.findByName("linux");
+        System.out.println("_______________________"+wxw.toString());
+
 
     }
 

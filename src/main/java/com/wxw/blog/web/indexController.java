@@ -13,10 +13,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author wxw
@@ -37,7 +34,7 @@ public class indexController {
     @GetMapping("/")
     public  String index(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable
     , Model model)  {
-
+        System.out.println("执行分页操作---------------------------");
 
         model.addAttribute("page",blogService.listBlog(pageable));
         model.addAttribute("types", typeService.listTypeTop(6));
@@ -53,11 +50,13 @@ public class indexController {
         return "index";
     }
 
-    @PostMapping("/search")
-    public String search(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
-                         @RequestParam String query, Model model) {
+    @RequestMapping("/search")
+    public String search(@PageableDefault(size = 2, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+                         @RequestParam("query") String query, Model model) {
+
         model.addAttribute("page", blogService.listBlog("%"+query+"%", pageable));
         model.addAttribute("query", query);
+        System.out.println("_________________"+query);
         return "search";
     }
 
@@ -66,7 +65,10 @@ public class indexController {
 
     @GetMapping("/blog/{id}")
     public  String blog(@PathVariable  Long id, Model model)  {
+        model.addAttribute("blogId", id);
         model.addAttribute("blog",blogService.getAndConvert(id));
+
+
         // int i=9/0;
 //        String blog=null;
 //        if(blog==null){

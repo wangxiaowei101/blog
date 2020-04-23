@@ -34,7 +34,7 @@ public class LoginController {
     @GetMapping
     public String loginPage(HttpServletRequest request) {
         Cookie[] cookies = request.getCookies();
-
+        if(cookies!=null)
             for (Cookie cookie : cookies) {
                 if (cookie.getName().equals("ck")){
                     String[] split = cookie.getValue().split("-");

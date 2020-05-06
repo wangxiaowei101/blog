@@ -8,7 +8,7 @@
 
 数据库：Mysql
 
-开发环境：java1.8 ，IDEA
+开发环境：java8 ，IDEA
 
 部署环境：linux（centos7.6）
 

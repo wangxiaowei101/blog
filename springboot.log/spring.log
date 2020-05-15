@@ -1,236 +1,742 @@
-2020-04-27 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** Starting BlogApplication on P1MF01XIYHS5ZO6 with PID 16312 (started by Administrator in D:\idea文件路径\blog)
-2020-04-27 ** [restartedMain] ** DEBUG ** com.wxw.blog.BlogApplication** Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
-2020-04-27 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** No active profile set, falling back to default profiles: default
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.boot.devtools.restart.ChangeableUrls** The Class-Path manifest attribute in D:\本地仓库\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor** Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor** For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Finished Spring Data repository scanning in 131ms. Found 5 JPA repository interfaces.
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'shiroConfig' of type [com.wxw.blog.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$53366bbc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#70310b43' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#70310b43' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#471300cc' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#5652e8f1' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#5652e8f1' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'inMemoryDatabaseShutdownExecutor' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'hikariPoolDataSourceMetadataProvider' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$374/58601500] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaVendorAdapter' of type [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactoryBuilder' of type [org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** org.hibernate.jpa.internal.util.LogHelper** HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-04-27 ** [restartedMain] ** INFO  ** org.hibernate.Version** HHH000412: Hibernate ORM core version 5.4.12.Final
-2020-04-27 ** [restartedMain] ** INFO  ** org.hibernate.annotations.common.Version** HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-04-27 ** [restartedMain] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Starting...
-2020-04-27 ** [restartedMain] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Start completed.
-2020-04-27 ** [restartedMain] ** INFO  ** org.hibernate.dialect.Dialect** HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-04-27 ** [restartedMain] ** INFO  ** o.h.e.t.jta.platform.internal.JtaPlatformInitiator** HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactory' of type [com.sun.proxy.$Proxy100] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#3e5eace3' of type [com.sun.proxy.$Proxy101] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaMappingContext' of type [org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaMappingContext' of type [org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userRepository' of type [com.sun.proxy.$Proxy117] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userServiceImpl' of type [com.wxw.blog.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'getUserRealm' of type [com.wxw.blog.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'getDefaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.boot.web.embedded.tomcat.TomcatWebServer** Tomcat initialized with port(s): 80 (http)
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.StandardService** Starting service [Tomcat]
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.StandardEngine** Starting Servlet engine: [Apache Tomcat/9.0.31]
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2020-04-27 ** [restartedMain] ** INFO  ** o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]** Initializing Spring embedded WebApplicationContext
-2020-04-27 ** [restartedMain] ** INFO  ** org.springframework.web.context.ContextLoader** Root WebApplicationContext: initialization completed in 7393 ms
-2020-04-27 ** [restartedMain] ** WARN  ** o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration** spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.b.a.web.servlet.WelcomePageHandlerMapping** Adding welcome page template: index
-2020-04-27 ** [restartedMain] ** WARN  ** org.thymeleaf.templatemode.TemplateMode** [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.b.d.autoconfigure.OptionalLiveReloadServer** LiveReload server is running on port 35729
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.boot.web.embedded.tomcat.TomcatWebServer** Tomcat started on port(s): 80 (http) with context path ''
-2020-04-27 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** Started BlogApplication in 9.924 seconds (JVM running for 11.825)
-2020-04-27 ** [http-nio-80-exec-1] ** INFO  ** o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]** Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-04-27 ** [http-nio-80-exec-1] ** INFO  ** org.springframework.web.servlet.DispatcherServlet** Initializing Servlet 'dispatcherServlet'
-2020-04-27 ** [http-nio-80-exec-1] ** INFO  ** org.springframework.web.servlet.DispatcherServlet** Completed initialization in 11 ms
-2020-04-27 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
-2020-04-27 ** [http-nio-80-exec-1] ** WARN  ** org.hibernate.orm.deprecation** HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2020-04-27 ** [http-nio-80-exec-1] ** WARN  ** org.hibernate.orm.deprecation** HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
-2020-04-27 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
-2020-04-27 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
-2020-04-27 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
-2020-04-27 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
-2020-04-27 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
-2020-04-27 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
-2020-04-27 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
-2020-04-27 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/145', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.blog', args=[145, {}]}
-2020-04-27 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
-2020-04-27 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
-2020-04-27 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
-2020-04-27 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
-2020-04-27 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
-2020-04-27 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
-2020-04-27 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
-2020-04-27 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/30', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.blog', args=[30, {}]}
-2020-04-27 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
-2020-04-27 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
-2020-04-27 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
-2020-04-27 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/30', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.CommentController.comments', args=[30, {}, org.apache.catalina.session.StandardSessionFacade@177152c1]}
-2020-04-27 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
-2020-04-27 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/30', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.blog', args=[30, {}]}
-2020-04-27 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
-2020-04-27 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
-2020-04-27 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
-2020-04-27 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/30', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.CommentController.comments', args=[30, {}, org.apache.catalina.session.StandardSessionFacade@177152c1]}
-2020-04-27 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
-2020-04-27 ** [Thread-22] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-27 ** [Thread-22] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-04-27 ** [Thread-22] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Shutdown initiated...
-2020-04-27 ** [Thread-22] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Shutdown completed.
-2020-04-27 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** Starting BlogApplication on P1MF01XIYHS5ZO6 with PID 16312 (started by Administrator in D:\idea文件路径\blog)
-2020-04-27 ** [restartedMain] ** DEBUG ** com.wxw.blog.BlogApplication** Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
-2020-04-27 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** No active profile set, falling back to default profiles: default
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Finished Spring Data repository scanning in 1ms. Found 0 JPA repository interfaces.
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.boot.web.embedded.tomcat.TomcatWebServer** Tomcat initialized with port(s): 80 (http)
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.StandardService** Starting service [Tomcat]
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.StandardEngine** Starting Servlet engine: [Apache Tomcat/9.0.31]
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2020-04-27 ** [restartedMain] ** INFO  ** o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]** Initializing Spring embedded WebApplicationContext
-2020-04-27 ** [restartedMain] ** INFO  ** org.springframework.web.context.ContextLoader** Root WebApplicationContext: initialization completed in 619 ms
-2020-04-27 ** [restartedMain] ** INFO  ** org.hibernate.jpa.internal.util.LogHelper** HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-04-27 ** [restartedMain] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-2 - Starting...
-2020-04-27 ** [restartedMain] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-2 - Start completed.
-2020-04-27 ** [restartedMain] ** INFO  ** org.hibernate.dialect.Dialect** HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-04-27 ** [restartedMain] ** INFO  ** o.h.e.t.jta.platform.internal.JtaPlatformInitiator** HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.b.d.autoconfigure.OptionalLiveReloadServer** LiveReload server is running on port 35729
-2020-04-27 ** [restartedMain] ** WARN  ** o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration** spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.b.a.web.servlet.WelcomePageHandlerMapping** Adding welcome page template: index
-2020-04-27 ** [restartedMain] ** WARN  ** org.thymeleaf.templatemode.TemplateMode** [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.boot.web.embedded.tomcat.TomcatWebServer** Tomcat started on port(s): 80 (http) with context path ''
-2020-04-27 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** Started BlogApplication in 1.525 seconds (JVM running for 217.864)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.b.d.a.ConditionEvaluationDeltaLoggingListener** Condition evaluation unchanged
-2020-04-27 ** [Thread-29] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-27 ** [Thread-29] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-04-27 ** [Thread-29] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-2 - Shutdown initiated...
-2020-04-27 ** [Thread-29] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-2 - Shutdown completed.
-2020-04-27 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** Starting BlogApplication on P1MF01XIYHS5ZO6 with PID 16312 (started by Administrator in D:\idea文件路径\blog)
-2020-04-27 ** [restartedMain] ** DEBUG ** com.wxw.blog.BlogApplication** Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
-2020-04-27 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** No active profile set, falling back to default profiles: default
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Finished Spring Data repository scanning in 19ms. Found 5 JPA repository interfaces.
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'shiroConfig' of type [com.wxw.blog.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$53366bbc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#153b038b' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#153b038b' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#464ee24f' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#1ed405c5' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#1ed405c5' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'inMemoryDatabaseShutdownExecutor' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'hikariPoolDataSourceMetadataProvider' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$374/58601500] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaVendorAdapter' of type [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactoryBuilder' of type [org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** org.hibernate.jpa.internal.util.LogHelper** HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-04-27 ** [restartedMain] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-3 - Starting...
-2020-04-27 ** [restartedMain] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-3 - Start completed.
-2020-04-27 ** [restartedMain] ** INFO  ** org.hibernate.dialect.Dialect** HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-04-27 ** [restartedMain] ** INFO  ** o.h.e.t.jta.platform.internal.JtaPlatformInitiator** HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactory' of type [com.sun.proxy.$Proxy158] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#7e765520' of type [com.sun.proxy.$Proxy159] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaMappingContext' of type [org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaMappingContext' of type [org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userRepository' of type [com.sun.proxy.$Proxy161] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userServiceImpl' of type [com.wxw.blog.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'getUserRealm' of type [com.wxw.blog.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'getDefaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.boot.web.embedded.tomcat.TomcatWebServer** Tomcat initialized with port(s): 80 (http)
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.StandardService** Starting service [Tomcat]
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.StandardEngine** Starting Servlet engine: [Apache Tomcat/9.0.31]
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-04-27 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2020-04-27 ** [restartedMain] ** INFO  ** o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]** Initializing Spring embedded WebApplicationContext
-2020-04-27 ** [restartedMain] ** INFO  ** org.springframework.web.context.ContextLoader** Root WebApplicationContext: initialization completed in 1052 ms
-2020-04-27 ** [restartedMain] ** WARN  ** o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration** spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.b.a.web.servlet.WelcomePageHandlerMapping** Adding welcome page template: index
-2020-04-27 ** [restartedMain] ** WARN  ** org.thymeleaf.templatemode.TemplateMode** [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.b.d.autoconfigure.OptionalLiveReloadServer** LiveReload server is running on port 35729
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.boot.web.embedded.tomcat.TomcatWebServer** Tomcat started on port(s): 80 (http) with context path ''
-2020-04-27 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** Started BlogApplication in 2.077 seconds (JVM running for 225.428)
-2020-04-27 ** [restartedMain] ** INFO  ** o.s.b.d.a.ConditionEvaluationDeltaLoggingListener** Condition evaluation unchanged
-2020-04-27 ** [main] ** INFO  ** com.wxw.blog.BlogApplicationTests** Starting BlogApplicationTests on P1MF01XIYHS5ZO6 with PID 8716 (started by Administrator in D:\idea�ļ�·��\blog)
-2020-04-27 ** [main] ** DEBUG ** com.wxw.blog.BlogApplicationTests** Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
-2020-04-27 ** [main] ** INFO  ** com.wxw.blog.BlogApplicationTests** No active profile set, falling back to default profiles: default
-2020-04-27 ** [main] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-04-27 ** [main] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Finished Spring Data repository scanning in 123ms. Found 5 JPA repository interfaces.
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'shiroConfig' of type [com.wxw.blog.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$b21e077] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#282ffbf5' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#282ffbf5' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#56380231' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#44924587' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#44924587' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'hikariPoolDataSourceMetadataProvider' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$594/556662073] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaVendorAdapter' of type [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactoryBuilder' of type [org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** org.hibernate.jpa.internal.util.LogHelper** HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-04-27 ** [main] ** INFO  ** org.hibernate.Version** HHH000412: Hibernate ORM core version 5.4.12.Final
-2020-04-27 ** [main] ** INFO  ** org.hibernate.annotations.common.Version** HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-04-27 ** [main] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Starting...
-2020-04-27 ** [main] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Start completed.
-2020-04-27 ** [main] ** INFO  ** org.hibernate.dialect.Dialect** HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-04-27 ** [main] ** INFO  ** o.h.e.t.jta.platform.internal.JtaPlatformInitiator** HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-04-27 ** [main] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactory' of type [com.sun.proxy.$Proxy106] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#a7ad6e5' of type [com.sun.proxy.$Proxy107] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaMappingContext' of type [org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaMappingContext' of type [org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userRepository' of type [com.sun.proxy.$Proxy123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userServiceImpl' of type [com.wxw.blog.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'getUserRealm' of type [com.wxw.blog.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'getDefaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-27 ** [main] ** WARN  ** o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration** spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-04-27 ** [main] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-27 ** [main] ** INFO  ** o.s.b.a.web.servlet.WelcomePageHandlerMapping** Adding welcome page template: index
-2020-04-27 ** [main] ** WARN  ** org.thymeleaf.templatemode.TemplateMode** [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-2020-04-27 ** [main] ** INFO  ** com.wxw.blog.BlogApplicationTests** Started BlogApplicationTests in 10.912 seconds (JVM running for 12.616)
-2020-04-27 ** [SpringContextShutdownHook] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-27 ** [SpringContextShutdownHook] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-04-27 ** [SpringContextShutdownHook] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Shutdown initiated...
-2020-04-27 ** [SpringContextShutdownHook] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Shutdown completed.
+2020-05-15 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** Starting BlogApplication on P1MF01XIYHS5ZO6 with PID 6408 (started by Administrator in D:\idea文件路径\blog)
+2020-05-15 ** [restartedMain] ** DEBUG ** com.wxw.blog.BlogApplication** Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-15 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** No active profile set, falling back to default profiles: default
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.boot.devtools.restart.ChangeableUrls** The Class-Path manifest attribute in D:\本地仓库\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor** Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor** For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Finished Spring Data repository scanning in 194ms. Found 5 JPA repository interfaces.
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'shiroConfig' of type [com.wxw.blog.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$54af7160] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#7bd7af66' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#7bd7af66' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#38784b9c' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#5e800b11' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#5e800b11' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'inMemoryDatabaseShutdownExecutor' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'hikariPoolDataSourceMetadataProvider' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$374/2071920523] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaVendorAdapter' of type [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactoryBuilder' of type [org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** org.hibernate.jpa.internal.util.LogHelper** HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-15 ** [restartedMain] ** INFO  ** org.hibernate.Version** HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-15 ** [restartedMain] ** INFO  ** org.hibernate.annotations.common.Version** HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-15 ** [restartedMain] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Starting...
+2020-05-15 ** [restartedMain] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Start completed.
+2020-05-15 ** [restartedMain] ** INFO  ** org.hibernate.dialect.Dialect** HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-05-15 ** [restartedMain] ** INFO  ** o.h.e.t.jta.platform.internal.JtaPlatformInitiator** HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactory' of type [com.sun.proxy.$Proxy100] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#66b994ff' of type [com.sun.proxy.$Proxy101] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaMappingContext' of type [org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaMappingContext' of type [org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userRepository' of type [com.sun.proxy.$Proxy117] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userServiceImpl' of type [com.wxw.blog.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'getUserRealm' of type [com.wxw.blog.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'getDefaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.boot.web.embedded.tomcat.TomcatWebServer** Tomcat initialized with port(s): 80 (http)
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.StandardService** Starting service [Tomcat]
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.StandardEngine** Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-05-15 ** [restartedMain] ** INFO  ** o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]** Initializing Spring embedded WebApplicationContext
+2020-05-15 ** [restartedMain] ** INFO  ** org.springframework.web.context.ContextLoader** Root WebApplicationContext: initialization completed in 7744 ms
+2020-05-15 ** [restartedMain] ** WARN  ** o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration** spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.b.a.web.servlet.WelcomePageHandlerMapping** Adding welcome page template: index
+2020-05-15 ** [restartedMain] ** WARN  ** org.thymeleaf.templatemode.TemplateMode** [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.b.d.autoconfigure.OptionalLiveReloadServer** LiveReload server is running on port 35729
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.boot.web.embedded.tomcat.TomcatWebServer** Tomcat started on port(s): 80 (http) with context path ''
+2020-05-15 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** Started BlogApplication in 10.986 seconds (JVM running for 13.305)
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]** Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** org.springframework.web.servlet.DispatcherServlet** Initializing Servlet 'dispatcherServlet'
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** org.springframework.web.servlet.DispatcherServlet** Completed initialization in 12 ms
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** WARN  ** org.hibernate.orm.deprecation** HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-15 ** [http-nio-80-exec-1] ** WARN  ** org.hibernate.orm.deprecation** HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.blog', args=[30, {}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.CommentController.comments', args=[30, {}, org.apache.catalina.session.StandardSessionFacade@56997991]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/about', ip='127.0.0.1', classMethod='com.wxw.blog.web.AboutShowController.about', args=[]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : about
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.blog', args=[30, {}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.CommentController.comments', args=[30, {}, org.apache.catalina.session.StandardSessionFacade@56997991]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/types/-1', ip='127.0.0.1', classMethod='com.wxw.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : types
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/tags/-1', ip='127.0.0.1', classMethod='com.wxw.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : tags
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/archives', ip='127.0.0.1', classMethod='com.wxw.blog.web.ArchiveShowController.archives', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : archives
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/about', ip='127.0.0.1', classMethod='com.wxw.blog.web.AboutShowController.about', args=[]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : about
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/tags/-1', ip='127.0.0.1', classMethod='com.wxw.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : tags
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/types/-1', ip='127.0.0.1', classMethod='com.wxw.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : types
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/tags/-1', ip='127.0.0.1', classMethod='com.wxw.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : tags
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], d, {}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.blog', args=[30, {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.CommentController.comments', args=[30, {}, org.apache.catalina.session.StandardSessionFacade@38a7d92f]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/types/-1', ip='127.0.0.1', classMethod='com.wxw.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : types
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/tags/-1', ip='127.0.0.1', classMethod='com.wxw.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : tags
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/archives', ip='127.0.0.1', classMethod='com.wxw.blog.web.ArchiveShowController.archives', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : archives
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/about', ip='127.0.0.1', classMethod='com.wxw.blog.web.AboutShowController.about', args=[]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : about
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], 1, {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], 1, {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], a, {}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/12', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.blog', args=[12, {}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/12', ip='127.0.0.1', classMethod='com.wxw.blog.web.CommentController.comments', args=[12, {}, org.apache.catalina.session.StandardSessionFacade@8d1eddd]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.blog', args=[30, {}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.CommentController.comments', args=[30, {}, org.apache.catalina.session.StandardSessionFacade@453ec601]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/12', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.blog', args=[12, {}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/12', ip='127.0.0.1', classMethod='com.wxw.blog.web.CommentController.comments', args=[12, {}, org.apache.catalina.session.StandardSessionFacade@453ec601]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.blog', args=[30, {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.CommentController.comments', args=[30, {}, org.apache.catalina.session.StandardSessionFacade@453ec601]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/12', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.blog', args=[12, {}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/12', ip='127.0.0.1', classMethod='com.wxw.blog.web.CommentController.comments', args=[12, {}, org.apache.catalina.session.StandardSessionFacade@453ec601]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/12', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.blog', args=[12, {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/12', ip='127.0.0.1', classMethod='com.wxw.blog.web.CommentController.comments', args=[12, {}, org.apache.catalina.session.StandardSessionFacade@453ec601]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/types/-1', ip='127.0.0.1', classMethod='com.wxw.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : types
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.blog', args=[30, {}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.CommentController.comments', args=[30, {}, org.apache.catalina.session.StandardSessionFacade@453ec601]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], , {}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/blog/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.blog', args=[30, {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/comments/30', ip='127.0.0.1', classMethod='com.wxw.blog.web.CommentController.comments', args=[30, {}, org.apache.catalina.session.StandardSessionFacade@453ec601]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : blog :: commentList
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], , {}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], , {}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], , {}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-4] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], , {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], , {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], , {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], , {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], , {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], , {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], , {}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], 125, {}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], , {}]}
+2020-05-15 ** [http-nio-80-exec-10] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-1] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], 1fg, {}]}
+2020-05-15 ** [http-nio-80-exec-8] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-9] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], 1fg, {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-6] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/search', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.search', args=[Page request [number: 0, size 2, sort: updateTime: DESC], 123, {}]}
+2020-05-15 ** [http-nio-80-exec-3] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : search
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-2] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-05-15 ** [http-nio-80-exec-5] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : index
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Request : {url='http://localhost/footer/newblog', ip='127.0.0.1', classMethod='com.wxw.blog.web.indexController.newblogs', args=[{}]}
+2020-05-15 ** [http-nio-80-exec-7] ** INFO  ** com.wxw.blog.aspect.LogAspect** Result : _fragments :: newblogList
+2020-05-15 ** [Thread-27] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-15 ** [Thread-27] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 ** [Thread-27] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Shutdown initiated...
+2020-05-15 ** [Thread-27] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Shutdown completed.
+2020-05-15 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** Starting BlogApplication on P1MF01XIYHS5ZO6 with PID 6408 (started by Administrator in D:\idea文件路径\blog)
+2020-05-15 ** [restartedMain] ** DEBUG ** com.wxw.blog.BlogApplication** Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-15 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** No active profile set, falling back to default profiles: default
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Finished Spring Data repository scanning in 0ms. Found 0 JPA repository interfaces.
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.boot.web.embedded.tomcat.TomcatWebServer** Tomcat initialized with port(s): 80 (http)
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.StandardService** Starting service [Tomcat]
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.StandardEngine** Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-05-15 ** [restartedMain] ** INFO  ** o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]** Initializing Spring embedded WebApplicationContext
+2020-05-15 ** [restartedMain] ** INFO  ** org.springframework.web.context.ContextLoader** Root WebApplicationContext: initialization completed in 483 ms
+2020-05-15 ** [restartedMain] ** INFO  ** org.hibernate.jpa.internal.util.LogHelper** HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-15 ** [restartedMain] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-2 - Starting...
+2020-05-15 ** [restartedMain] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-2 - Start completed.
+2020-05-15 ** [restartedMain] ** INFO  ** org.hibernate.dialect.Dialect** HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-05-15 ** [restartedMain] ** INFO  ** o.h.e.t.jta.platform.internal.JtaPlatformInitiator** HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.b.d.autoconfigure.OptionalLiveReloadServer** LiveReload server is running on port 35729
+2020-05-15 ** [restartedMain] ** WARN  ** o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration** spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.b.a.web.servlet.WelcomePageHandlerMapping** Adding welcome page template: index
+2020-05-15 ** [restartedMain] ** WARN  ** org.thymeleaf.templatemode.TemplateMode** [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.boot.web.embedded.tomcat.TomcatWebServer** Tomcat started on port(s): 80 (http) with context path ''
+2020-05-15 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** Started BlogApplication in 2.267 seconds (JVM running for 13367.642)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.b.d.a.ConditionEvaluationDeltaLoggingListener** Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-05-15 ** [Thread-34] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-15 ** [Thread-34] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 ** [Thread-34] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-2 - Shutdown initiated...
+2020-05-15 ** [Thread-34] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-2 - Shutdown completed.
+2020-05-15 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** Starting BlogApplication on P1MF01XIYHS5ZO6 with PID 6408 (started by Administrator in D:\idea文件路径\blog)
+2020-05-15 ** [restartedMain] ** DEBUG ** com.wxw.blog.BlogApplication** Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-15 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** No active profile set, falling back to default profiles: default
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Finished Spring Data repository scanning in 215ms. Found 5 JPA repository interfaces.
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'shiroConfig' of type [com.wxw.blog.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$54af7160] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#519cea47' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#519cea47' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#291b6229' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#2f89d256' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#2f89d256' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'inMemoryDatabaseShutdownExecutor' of type [org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'hikariPoolDataSourceMetadataProvider' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$374/2071920523] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaVendorAdapter' of type [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactoryBuilder' of type [org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** org.hibernate.jpa.internal.util.LogHelper** HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-15 ** [restartedMain] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-3 - Starting...
+2020-05-15 ** [restartedMain] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-3 - Start completed.
+2020-05-15 ** [restartedMain] ** INFO  ** org.hibernate.dialect.Dialect** HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-05-15 ** [restartedMain] ** INFO  ** o.h.e.t.jta.platform.internal.JtaPlatformInitiator** HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactory' of type [com.sun.proxy.$Proxy158] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#349720cb' of type [com.sun.proxy.$Proxy159] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaMappingContext' of type [org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaMappingContext' of type [org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userRepository' of type [com.sun.proxy.$Proxy161] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userServiceImpl' of type [com.wxw.blog.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'getUserRealm' of type [com.wxw.blog.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'getDefaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.boot.web.embedded.tomcat.TomcatWebServer** Tomcat initialized with port(s): 80 (http)
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.StandardService** Starting service [Tomcat]
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.StandardEngine** Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-15 ** [restartedMain] ** INFO  ** org.apache.catalina.core.AprLifecycleListener** OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-05-15 ** [restartedMain] ** INFO  ** o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]** Initializing Spring embedded WebApplicationContext
+2020-05-15 ** [restartedMain] ** INFO  ** org.springframework.web.context.ContextLoader** Root WebApplicationContext: initialization completed in 2376 ms
+2020-05-15 ** [restartedMain] ** WARN  ** o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration** spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.b.a.web.servlet.WelcomePageHandlerMapping** Adding welcome page template: index
+2020-05-15 ** [restartedMain] ** WARN  ** org.thymeleaf.templatemode.TemplateMode** [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.b.d.autoconfigure.OptionalLiveReloadServer** LiveReload server is running on port 35729
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.boot.web.embedded.tomcat.TomcatWebServer** Tomcat started on port(s): 80 (http) with context path ''
+2020-05-15 ** [restartedMain] ** INFO  ** com.wxw.blog.BlogApplication** Started BlogApplication in 4.139 seconds (JVM running for 13376.776)
+2020-05-15 ** [restartedMain] ** INFO  ** o.s.b.d.a.ConditionEvaluationDeltaLoggingListener** Condition evaluation unchanged
+2020-05-15 ** [main] ** INFO  ** com.wxw.blog.BlogApplicationTests** Starting BlogApplicationTests on P1MF01XIYHS5ZO6 with PID 8092 (started by Administrator in D:\idea�ļ�·��\blog)
+2020-05-15 ** [main] ** DEBUG ** com.wxw.blog.BlogApplicationTests** Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-05-15 ** [main] ** INFO  ** com.wxw.blog.BlogApplicationTests** No active profile set, falling back to default profiles: default
+2020-05-15 ** [main] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-15 ** [main] ** INFO  ** o.s.d.r.config.RepositoryConfigurationDelegate** Finished Spring Data repository scanning in 148ms. Found 5 JPA repository interfaces.
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'shiroConfig' of type [com.wxw.blog.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$ad5faa5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#76889e60' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#76889e60' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#36061cf3' of type [org.springframework.data.repository.core.support.PropertiesBasedNamedQueries] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#bbf9e07' of type [org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#bbf9e07' of type [org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.JpaProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'hikariPoolDataSourceMetadataProvider' of type [org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$594/399715995] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' of type [org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaVendorAdapter' of type [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactoryBuilder' of type [org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** org.hibernate.jpa.internal.util.LogHelper** HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-15 ** [main] ** INFO  ** org.hibernate.Version** HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-05-15 ** [main] ** INFO  ** org.hibernate.annotations.common.Version** HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-15 ** [main] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Starting...
+2020-05-15 ** [main] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Start completed.
+2020-05-15 ** [main] ** INFO  ** org.hibernate.dialect.Dialect** HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-05-15 ** [main] ** INFO  ** o.h.e.t.jta.platform.internal.JtaPlatformInitiator** HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-15 ** [main] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactory' of type [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'entityManagerFactory' of type [com.sun.proxy.$Proxy106] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean '(inner bean)#13275d8' of type [com.sun.proxy.$Proxy107] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaMappingContext' of type [org.springframework.data.jpa.repository.config.JpaMetamodelMappingContextFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'jpaMappingContext' of type [org.springframework.data.jpa.mapping.JpaMetamodelMappingContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userRepository' of type [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userRepository' of type [com.sun.proxy.$Proxy123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'userServiceImpl' of type [com.wxw.blog.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'getUserRealm' of type [com.wxw.blog.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** INFO  ** o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker** Bean 'getDefaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-15 ** [main] ** WARN  ** o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration** spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-15 ** [main] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-15 ** [main] ** INFO  ** o.s.b.a.web.servlet.WelcomePageHandlerMapping** Adding welcome page template: index
+2020-05-15 ** [main] ** WARN  ** org.thymeleaf.templatemode.TemplateMode** [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-05-15 ** [main] ** INFO  ** com.wxw.blog.BlogApplicationTests** Started BlogApplicationTests in 18.051 seconds (JVM running for 21.449)
+2020-05-15 ** [SpringContextShutdownHook] ** INFO  ** o.s.scheduling.concurrent.ThreadPoolTaskExecutor** Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-15 ** [SpringContextShutdownHook] ** INFO  ** o.s.orm.jpa.LocalContainerEntityManagerFactoryBean** Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 ** [SpringContextShutdownHook] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Shutdown initiated...
+2020-05-15 ** [SpringContextShutdownHook] ** INFO  ** com.zaxxer.hikari.HikariDataSource** HikariPool-1 - Shutdown completed.

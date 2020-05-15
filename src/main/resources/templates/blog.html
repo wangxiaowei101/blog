@@ -431,7 +431,7 @@ h5,h6{font-size:1em;}
 
         <!--标签-->
         <div class="m-padded-lr-responsive" >
-          <div class="ui basic teal left pointing label" th:each="tag:${blog.tags}" th:text="${tag.name}">方法论</div>
+          <div class="ui basic  left pointing label" style="background: #6c71c4;color: aliceblue" th:each="tag:${blog.tags}" th:text="${tag.name}">方法论</div>
         </div>
 
         <!--赞赏-->
@@ -475,7 +475,7 @@ h5,h6{font-size:1em;}
       </div>
       <!--留言区域-->
       <div  class="ui bottom attached segment" th:if="${blog.commentabled}">
-        <div id="comment-container"  class="ui teal segment">
+        <div id="comment-container"  class="ui type-color  segment">
           <div th:fragment="commentList">
             <div class="ui threaded comments" style="max-width: 100%;">
               <h3 class="ui dividing header">评论</h3>
@@ -603,7 +603,7 @@ h5,h6{font-size:1em;}
               </div>
             </div>
             <div class="field  m-margin-bottom-small m-mobile-wide">
-              <button id="commentpost-btn" type="button" class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
+              <button id="commentpost-btn" type="button" class="ui  button m-mobile-wide " style="background: #6c71c4;color: aliceblue" ><i class="edit icon"></i>发布</button>
             </div>
           </div>
           <div class="ui error message"></div>
@@ -615,8 +615,8 @@ h5,h6{font-size:1em;}
 
   <div id="toolbar" class="m-padded m-fixed m-right-bottom" style="display: none">
     <div class="ui vertical icon buttons ">
-      <button type="button" class="ui toc teal button" >目录</button>
-      <a href="#comment-container" class="ui teal button" >留言</a>
+      <button type="button" class="ui toc  button  " style="background: #6c71c4;color: aliceblue">目录</button>
+      <a href="#comment-container" class="ui  button" style="background: #6c71c4;color: aliceblue"  >留言</a>
       <button class="ui wechat icon button"><i class="weixin icon"></i></button>
       <div id="toTop-button" class="ui icon button" ><i class="chevron up icon"></i></div>
     </div>

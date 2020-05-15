@@ -48,12 +48,12 @@
       </div>
 
       <div class="ui attached segment m-padded-tb-large">
-        <a href="#" th:href="@{/tags/{id}(id=${tag.id})}"  class="ui basic left pointing large label m-margin-tb-tiny" th:classappend="${tag.id==activeTagId} ? 'teal'" th:each="tag : ${tags}">
+        <a href="#" th:href="@{/tags/{id}(id=${tag.id})}"  class="ui basic left pointing large label m-margin-tb-tiny" th:classappend="${tag.id==activeTagId} ? 'blue'" th:each="tag : ${tags}">
           <span th:text="${tag.name}">方法论</span> <div class="detail" th:text="${#arrays.length(tag.blogs)}">23</div>
         </a>
       </div>
 
-      <div class="ui top attached teal segment">
+      <div class="ui top attached blue segment">
         <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${page.content}">
           <div class="ui middle aligned mobile reversed stackable grid" >
             <div class="eleven wide column">
@@ -76,12 +76,12 @@
                     </div>
                   </div>
                   <div class="right aligned five wide column">
-                    <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">认知升级</a>
+                    <a href="#" target="_blank" class="ui blue basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">认知升级</a>
                   </div>
                 </div>
                 <div class="row">
                   <div class="column">
-                    <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui  basic left pointing label m-padded-mini m-text-thin" th:classappend="${tag.id==activeTagId} ? 'teal'" th:each="tag : ${blog.tags}" th:text="${tag.name}">方法论</a>
+                    <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui  basic left pointing label m-padded-mini m-text-thin" th:classappend="${tag.id==activeTagId} ? 'blue'" th:each="tag : ${blog.tags}" th:text="${tag.name}">方法论</a>
                   </div>
                 </div>
               </div>

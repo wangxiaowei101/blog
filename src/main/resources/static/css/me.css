@@ -187,9 +187,7 @@ body {
 .me-main{
     min-height: calc(50%);
 }
-.me-color{
-    background: #6c71c4;color: aliceblue  !important;
- }
+
 .me-color2{
     color:#6c71c4 !important;
 }

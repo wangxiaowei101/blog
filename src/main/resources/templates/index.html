@@ -74,9 +74,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="right aligned five wide column">
-
-                      <a href="#" th:href="@{/types/{id}(id=${blog.type.id})}" target="_blank" class="ui blue  basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}" >认知升级</a>
+                    <div class="right aligned five wide column" style="padding-left: 10px"  >
+                      <a href="#" th:href="@{/types/{id}(id=${blog.type.id})}" target="_blank" class="ui blue  basic label m-padded-tiny m-text-thin"  th:text="${blog.type.name}" >认知升级</a>
                     </div>
                   </div>
                 </div>
@@ -148,7 +147,7 @@
             </div>
             <div class="ui type-color segment" >
               <a href="#"  th:href="@{/tags/{id}(id=${tag.id})}" target="_blank" class="ui  basic left pointing label m-margin-tb-tiny" style="background: #6c71c4" th:each="tag:${tags}">
-                <span  th:text="${tag.name}" style="color:#e8f2ff;">方法论</span><div class="detail" style="color:#e8f2ff;" th:text="${#arrays.length(tag.blogs)}">23</div>
+                <span  th:text="${tag.name}" style="color:white;">方法论</span><div class="detail" style="color:white;" th:text="${#arrays.length(tag.blogs)}">23</div>
               </a>
 
             </div>

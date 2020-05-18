@@ -32,11 +32,11 @@
       <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="info icon"></i>关于我</a>
       <div class="right m-item item m-mobile-hide">
 
-        <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
+        <form id="ui" name="search" action="#" th:action="@{/search}" method="post" target="_blank">
           <div class="ui search">
           <div class="ui icon  input ">
             <input id="search1"  class="prompt"  type="text" name="query" placeholder="Search...." th:value="${query}">
-            <i id="search"  type="button" class="  search link icon submit"></i>
+            <i id="search" type="button" class=" search link icon submit"></i>
           </div>
           </div>
 
@@ -110,7 +110,7 @@
           myAlert("请输入搜索内容！")
         }else {
 
-          $(".ui.form").submit();
+          $("#ui").submit();
         }
       })
 
@@ -121,7 +121,7 @@
             return false;
           }else {
 
-            $(".ui.form").submit();
+            $("#ui").submit();
           }
         }
       });

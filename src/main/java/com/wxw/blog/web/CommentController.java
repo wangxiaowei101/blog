@@ -48,10 +48,18 @@ public class CommentController {
     public String post(Comment comment, HttpSession session) {
         Long blogId = comment.getBlog().getId();
         comment.setBlog(blogService.getBlog(blogId));
+        //guanliyuan
         User user = (User) session.getAttribute("user");
+        //yonghu
+        User user1 = (User) session.getAttribute("user1");
+        comment.setNickname(user1.getNickname());
+        comment.setEmail(user1.getEmail());
         if (user != null) {
-            comment.setAvatar(user.getAvatar());
-            comment.setAdminComment(true);
+            if(user.getUsername().equals(user1.getUsername())){
+                comment.setAvatar(user.getAvatar());
+                comment.setAdminComment(true);
+            }
+
         } else {
             comment.setAvatar(avatar);
         }

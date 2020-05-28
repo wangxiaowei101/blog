@@ -582,15 +582,19 @@ h5,h6{font-size:1em;}
 
             </div>
           </div>
+
         </div>
-        <div id="comment-form" class="ui form me">
+        <div th:if="${session.user1==null}">
+       注册登陆后才能发表评论，请先<a href="#" th:href="@{/User/userlogin}">登录</a> 或<a href="#" th:href="@{/User/toRegister}">注册</a>！
+        </div>
+        <div id="comment-form" class="ui form me" th:if="${session.user1}!=null">
           <input type="hidden" name="blog.id" th:value="${blog.id}">
           <input type="hidden" name="parentComment.id" value="-1">
           <div class="field">
             <textarea name="content" placeholder="请输入评论信息..."></textarea>
           </div>
           <div class="fields">
-            <div class="field m-mobile-wide m-margin-bottom-small">
+         <!--   <div class="field m-mobile-wide m-margin-bottom-small">
               <div class="ui left icon input">
                 <i class="user icon"></i>
                 <input type="text" name="nickname" placeholder="姓名" th:value="${session.user}!=null ? ${session.user.nickname}">
@@ -601,7 +605,7 @@ h5,h6{font-size:1em;}
                 <i class="mail icon"></i>
                 <input type="text" name="email" placeholder="邮箱" th:value="${session.user}!=null ? ${session.user.email}">
               </div>
-            </div>
+            </div>-->
             <div class="field  m-margin-bottom-small m-mobile-wide">
               <button id="commentpost-btn" type="button" class="ui  button m-mobile-wide " style="background: #6c71c4;color: white" ><i class="edit icon"></i>发布</button>
             </div>

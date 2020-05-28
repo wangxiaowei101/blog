@@ -56,31 +56,47 @@ public class LoginController {
                         RedirectAttributes attributes, HttpServletResponse response) {
 
         System.out.println("是否记住密码："+remember);
+        Integer typeByName = userService.findTypeByName(username);
+           if(typeByName!=null){
 
-        Subject subject = SecurityUtils.getSubject();
-        String md5paw = MD5Utils.md5Hash(password, username, 3);
-        UsernamePasswordToken token = new UsernamePasswordToken(username,md5paw);
-        try {
-            subject.login(token);
-            User user = userService.findUserByName(username);
-            session.setAttribute("user",user);
 
-            if(remember!=null){
-                Cookie cookie = new Cookie("ck",username+"-"+password);
-                cookie.setMaxAge(60*60*365);
-                response.addCookie(cookie);
-            }else {
-                Cookie cookie = new Cookie("ck","");
-                cookie.setMaxAge(0);
-                response.addCookie(cookie);
+        if (typeByName==1) {
+
+
+            Subject subject = SecurityUtils.getSubject();
+            String md5paw = MD5Utils.md5Hash(password, username, 3);
+            UsernamePasswordToken token = new UsernamePasswordToken(username, md5paw);
+            try {
+                subject.login(token);
+                User user = userService.findUserByName(username);
+                session.setAttribute("user", user);
+
+                if (remember != null) {
+                    Cookie cookie = new Cookie("ck", username + "-" + password);
+                    cookie.setMaxAge(60 * 60 * 365);
+                    response.addCookie(cookie);
+                } else {
+                    Cookie cookie = new Cookie("ck", "");
+                    cookie.setMaxAge(0);
+                    response.addCookie(cookie);
+                }
+
+                return "admin/index";
+            } catch (AuthenticationException e) {
+                e.printStackTrace();
+                attributes.addFlashAttribute("message", "用户名和密码错误");
+                return "redirect:/admin";
             }
-
-            return "admin/index";
-        } catch (AuthenticationException e) {
-            e.printStackTrace();
+        }
+        else {
             attributes.addFlashAttribute("message", "用户名和密码错误");
             return "redirect:/admin";
         }
+           }else {
+               attributes.addFlashAttribute("message", "用户名和密码错误");
+               return "redirect:/admin";
+           }
+
 
         /*User user = userService.checkUser(username, password);*/
 
@@ -94,6 +110,7 @@ public class LoginController {
             attributes.addFlashAttribute("message", "用户名和密码错误");
             return "redirect:/admin";
         }*/
+
     }
 
     @GetMapping("/logout")

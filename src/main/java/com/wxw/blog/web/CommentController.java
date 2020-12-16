@@ -6,6 +6,7 @@ import com.wxw.blog.po.Comment;
 import com.wxw.blog.po.User;
 import com.wxw.blog.service.BlogService;
 import com.wxw.blog.service.CommentService;
+import com.wxw.blog.util.SensitiveFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -24,8 +25,8 @@ public class CommentController {
 
     @Autowired
     private BlogService blogService;
-
-    @Value("${comment.avatar}")
+    @Autowired
+    SensitiveFilter sensitiveFilter;
     private String avatar;
 
     @GetMapping("/comments/{blogId}")
@@ -55,14 +56,18 @@ public class CommentController {
         comment.setNickname(user1.getNickname());
         comment.setEmail(user1.getEmail());
         if (user != null) {
+            System.out.println("--------------------"+user1);
+            System.out.println("--------------------"+user);
             if(user.getUsername().equals(user1.getUsername())){
                 comment.setAvatar(user.getAvatar());
                 comment.setAdminComment(true);
             }
 
         } else {
+            avatar="/images/avatar.jpg";
             comment.setAvatar(avatar);
         }
+        comment.setContent(sensitiveFilter.filter(comment.getContent()));
         commentService.saveComment(comment);
         return "redirect:/comments/" + blogId;
     }

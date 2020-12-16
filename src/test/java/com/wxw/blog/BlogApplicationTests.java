@@ -8,6 +8,7 @@ import com.wxw.blog.po.Comment;
 import com.wxw.blog.po.Tag;
 import com.wxw.blog.po.User;
 import com.wxw.blog.service.BlogService;
+import com.wxw.blog.util.SensitiveFilter;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -22,6 +23,8 @@ class BlogApplicationTests {
     private TagRepository userRepository;
     @Autowired
     private CommentRepository commentRepository;
+    @Autowired
+    SensitiveFilter sensitiveFilter;
     @Test
     void contextLoads() {
 
@@ -30,5 +33,12 @@ class BlogApplicationTests {
 
 
     }
+    @Test
+    void contextLoads1() {
 
+
+        String s = sensitiveFilter.filter("你妈逼");
+        System.out.println(s);
+
+    }
 }

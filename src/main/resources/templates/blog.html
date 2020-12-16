@@ -502,7 +502,7 @@ h5,h6{font-size:1em;}
                 <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0">
                   <div class="comment" th:each="reply : ${comment.replyComments}">
                     <a class="avatar">
-                      <img src="https://unsplash.it/100/100?image=1005" th:src="@{${reply.avatar}}">
+                      <img src="https://unsplash.it/100/100?image=1005" th:src="${reply.avatar}">
                     </a>
                     <div class="content">
                       <a class="author" >

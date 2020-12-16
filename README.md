@@ -8,10 +8,10 @@
 
 数据库：Mysql
 
-开发环境：java8 ，IDEA
+开发环境：java8,IDEA,maven,tomcat9.0
 
 部署环境：linux（centos7.6）
 
-访问ip：http://129.204.233.29/
+访问地址：www.webts.xyz
 
 
